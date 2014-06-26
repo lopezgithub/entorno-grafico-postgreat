@@ -118,7 +118,7 @@
 	LEFT JOIN pg_constraint AS pc2 ON pc2.contype = \'f\'::"char" AND pc2.conrelid = pg_class.oid AND (pg_attribute.attnum = ANY (pc2.conkey)) 
 	
 	WHERE pg_class.relname = pg_tables.tablename 
-	AND pg_tables.tableowner = "current_user"() 
+	/*AND pg_tables.tableowner = "current_user"()*/ 
 	AND pg_attribute.atttypid <> 0::oid AND tablename=\''.$tablename.'\' 
 	';
 					$rows2=pg_query($conec, $sql2) or die ("Error al sacar las columnas de las tablas: ".pg_last_error($conec));

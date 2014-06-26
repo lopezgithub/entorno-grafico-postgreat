@@ -14,7 +14,6 @@
 <script type="text/javascript" language="javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/base.js"></script>
 
-
 <plantilla id='plantilla'>
 	<link href="css/<?php echo $_SESSION['tema']; ?>/base.css" rel="stylesheet" type="text/css" />
     <link href="css/<?php echo $_SESSION['tema']; ?>/jquery-ui-1.8.21.custom.css" rel="stylesheet" type="text/css" />
@@ -22,6 +21,13 @@
 
 <plantilla id='plantilla2'>
 </plantilla>
+
+<style>
+	#myCanvas
+	{
+		border:solid 3px #000;
+	}
+</style>
 
 </head>
 <body>
@@ -96,7 +102,7 @@
         
 </div>
 <input type="hidden" id="tablas_acceso" name="tablas_acceso" />
-<canvas id="myCanvas" width="1800" height="1200">
+<canvas id="myCanvas" width="2800" height="2200">
 </canvas>
 	<?php
 		$_SESSION['esquema']='public';

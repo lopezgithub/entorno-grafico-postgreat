@@ -14,7 +14,7 @@
 		{
 			$sql="
 			BEGIN;
-			CREATE SCHEMA \"databasedesigner\" AUTHORIZATION \"yaroslav\";
+			CREATE SCHEMA \"databasedesigner\" AUTHORIZATION \"postgres\";
 			CREATE TABLE databasedesigner.modelo_entidad_relacion (
 			id_tabla SERIAL,
 			tabla VARCHAR(80),
