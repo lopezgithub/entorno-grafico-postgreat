@@ -1,0 +1,64 @@
+.ui-icon
+{
+	cursor:pointer;
+}
+.tabla_mr:hover
+{
+	cursor:move;
+	z-index: 1;
+	opacity:.8;
+}
+.tabla_mr
+{ 	
+	border-radius:5px 5px 5px 0px;
+	/*box-shadow: 7px 2px 5px #666;*/
+	border:2px solid #E6E6CC;
+	position:absolute;
+	background-color:#F89D43;
+}
+table, tr, td
+{
+	font-size:10px;
+	font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;	
+	text-align:left;
+	border-collapse:collapse;
+	padding:0px;
+}
+table tr th, #acceso
+{
+	background-color:#D17D45;
+	font-size:12px;
+}
+#myCanvas
+{
+	background-color:#FFFFFF;
+}
+.primarykey
+{
+	visibility:hidden;
+	height:0px;
+	width:0px;
+}
+.pk
+{
+	background-color:#F9B980;
+	color:#336699;
+}
+.fk
+{
+	background-color:#F9DBA4;
+	/*border: .5px dashed #baaea3;*/
+}
+#barra
+{
+	position:absolute;
+	background-color:#623100;
+	color:#FFF;
+	border: #E6E6CC solid 2px;
+	font-weight:bold;
+	position:fixed;
+	top:0%;
+	left:0%;
+	width:100%;
+	z-index:1;
+}
